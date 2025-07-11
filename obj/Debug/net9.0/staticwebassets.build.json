@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "L2T3OR17pJ32WjzDcIwako12uobzVcvVLFmMZqsIlkI=",
+  "Source": "SurfForecastApi",
+  "BasePath": "_content/SurfForecastApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

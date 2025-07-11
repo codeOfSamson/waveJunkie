@@ -1,0 +1,6 @@
+@SurfForecastApi_HostAddress = http://localhost:5250
+
+GET {{SurfForecastApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
