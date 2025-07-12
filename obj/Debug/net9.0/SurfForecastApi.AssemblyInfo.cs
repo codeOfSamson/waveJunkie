@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SurfForecastApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5ab57baded9a860125f65162b739dc26e185864")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbe15bb5b88551de46f28151f6ff43e8806c32a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SurfForecastApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SurfForecastApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

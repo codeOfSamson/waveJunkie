@@ -18,6 +18,7 @@
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.csproj.CoreCompileInputs.cache
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.MvcApplicationPartsAssemblyInfo.cs
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.sourcelink.json
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/scopedcss/bundle/SurfForecastApi.styles.css
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/staticwebassets.build.json
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/staticwebassets.development.json
@@ -34,4 +35,3 @@
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.pdb
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.genruntimeconfig.cache
 /Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/ref/SurfForecastApi.dll
-/Users/seamus/Wave Slut/SurfForecastApi/obj/Debug/net9.0/SurfForecastApi.sourcelink.json
