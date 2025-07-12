@@ -20,7 +20,7 @@ public class XweatherClient
 
     public async Task<MaritimeResponse?> GetMaritimeDataAsync(double lat, double lon)
     {
-        var url = $"{lat},{lon}?for=now&to=now&client_id={_clientId}&client_secret={_clientSecret}";
+        var url = $"/{lat},{lon}?for=now&to=now&client_id={_clientId}&client_secret={_clientSecret}";
         var response = await _httpClient.GetAsync(url);
 
         if (!response.IsSuccessStatusCode) return null;
@@ -28,14 +28,22 @@ public class XweatherClient
         var json = await response.Content.ReadAsStringAsync();
         using var doc = JsonDocument.Parse(json);
 
-        var nowData = doc.RootElement.GetProperty("hours")[0];
+        // The API returns a response array with periods
+        var responseArray = doc.RootElement.GetProperty("response");
+        if (responseArray.GetArrayLength() == 0) return null;
+
+        var firstLocation = responseArray[0];
+        var periods = firstLocation.GetProperty("periods");
+        if (periods.GetArrayLength() == 0) return null;
+
+        var nowData = periods[0];
 
         return new MaritimeResponse
         {
-            WaveHeight = nowData.GetProperty("waveHeight").GetDouble(),
-            WindSpeed = nowData.GetProperty("windSpeed").GetDouble(),
-            WindDirection = nowData.GetProperty("windDirection").GetString() ?? "N/A",
-            SwellPeriod = nowData.GetProperty("swellPeriod").GetDouble()
+            WaveHeight = nowData.GetProperty("significantWaveHeightM").GetDouble(),
+            WindWaveDirection = nowData.GetProperty("windWaveDir").GetDouble(),
+            //WindSpeed = 0, // Wind speed not available in this API response
+            SwellPeriod = nowData.GetProperty("primarySwellPeriod").GetDouble()
         };
     }
 }
